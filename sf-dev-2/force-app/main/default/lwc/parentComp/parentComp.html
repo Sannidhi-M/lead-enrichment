@@ -1,0 +1,24 @@
+<template>
+    <lightning-card>
+        <div class="slds-align_absolute-center">
+            <c-child-comp
+                is-loading={isLoading}
+                show-cached-banner={showCachedBanner}
+                cached-data={cachedData}
+                onenrichlead={handleLeadEnriched}>
+            </c-child-comp>
+
+            <template if:true={isLoading}>
+                <div class="slds-m-top_medium">
+                    <lightning-spinner
+                        alternative-text="Enriching Lead..."
+                        size="small">
+                    </lightning-spinner>
+                    <p class="slds-m-top_small">
+                        Enriching company information...
+                    </p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

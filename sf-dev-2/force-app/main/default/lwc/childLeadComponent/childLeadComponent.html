@@ -1,0 +1,156 @@
+<template>
+
+    <lightning-card title="Enriched Details">
+
+        <div class="slds-p-around_medium">
+
+            <div class="slds-grid slds-wrap slds-gutters">
+
+                <!-- Company -->
+                <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+
+                    <strong>Company Name</strong>
+
+                    <div>
+                        {companyName}
+                    </div>
+
+                </div>
+
+
+                <!-- Industry -->
+                <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+
+                    <strong>Industry</strong>
+
+                    <div>
+                        {industry}
+                    </div>
+
+                </div>
+
+
+                <!-- Employee Count -->
+                <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+
+                    <strong>Employee Count</strong>
+
+                    <div>
+                        {employeeCount}
+                    </div>
+
+                </div>
+
+
+                <!-- Employee Range -->
+                <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+
+                    <strong>Employee Range</strong>
+
+                    <div>
+                        {employeeRange}
+                    </div>
+
+                </div>
+
+
+                <!-- Country -->
+                <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+
+                    <strong>Country</strong>
+
+                    <div>
+                        {country}
+                    </div>
+
+                </div>
+
+
+                <!-- Domain -->
+                <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+
+                    <strong>Domain</strong>
+
+                    <div>
+                        {domain}
+                    </div>
+
+                </div>
+
+
+                <!-- Confidence -->
+                <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+
+                    <strong>Confidence Score</strong>
+
+                    <div>
+                        {confidenceScore}
+                    </div>
+
+                </div>
+
+
+                <!-- Status -->
+                <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+
+                    <strong>Enrichment Status</strong>
+
+                    <div>
+                        {status}
+                    </div>
+
+                </div>
+
+
+                <!-- Last Enriched -->
+                <div class="slds-col slds-size_1-of-2 slds-m-bottom_medium">
+
+                    <strong>Last Enriched</strong>
+
+                    <div>
+                        {lastEnrichedDate}
+                    </div>
+
+                </div>
+
+
+                <!-- Notes -->
+                <div class="slds-col slds-size_1-of-1 slds-m-bottom_medium">
+
+                    <strong>Enrichment Notes</strong>
+
+                    <div>
+                        {notes}
+                    </div>
+
+                </div>
+
+
+                <!-- Logo -->
+                <template if:true={logo}>
+
+                    <div class="slds-col slds-size_1-of-1">
+
+                        <strong>Company Logo</strong>
+
+                        <div class="slds-m-top_small">
+
+                            <img
+                                src={logo}
+                                alt="Company Logo"
+                                style="max-width: 120px; max-height: 120px;"
+                            />
+
+                        </div>
+
+                    </div>
+
+                </template>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+
+</template>

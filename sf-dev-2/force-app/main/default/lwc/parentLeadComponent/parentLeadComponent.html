@@ -1,0 +1,51 @@
+<template>
+
+    <lightning-card title="Lead Enrichment">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-button
+                variant="brand"
+                label="Enrich Lead"
+                onclick={handleEnrich}
+                disabled={isLoading}>
+            </lightning-button>
+
+            <template if:true={showCachedBanner}>
+                <div
+                    class="slds-notify slds-notify_alert slds-theme_info slds-m-top_medium"
+                    role="alert">
+
+                    <span class="slds-assistive-text">
+                        Information
+                    </span>
+
+                    <span>
+                        Showing cached enrichment data from the last 7 days.
+                    </span>
+
+                </div>
+            </template>
+
+            <template if:true={isLoading}>
+
+                <div class="slds-m-top_medium">
+
+                    <lightning-spinner
+                        alternative-text="Enriching Lead..."
+                        size="small">
+                    </lightning-spinner>
+
+                    <p class="slds-m-top_small">
+                        Enriching company information...
+                    </p>
+
+                </div>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

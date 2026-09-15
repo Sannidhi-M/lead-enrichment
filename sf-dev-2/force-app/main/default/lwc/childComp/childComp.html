@@ -1,0 +1,16 @@
+<template>
+    <template if:true={showCachedBanner}>
+        <div class="slds-notification slds-theme_info slds-m-bottom_small">
+            <lightning-icon icon-name="utility:info" size="small"></lightning-icon>
+            Showing cached data from 
+            <lightning-formatted-date value={cachedData.lastEnrichedDate} year="numeric" month="short" day="numeric"></lightning-formatted-date>
+        </div>
+    </template>
+
+    <lightning-button
+        label={buttonLabel}
+        variant="brand"
+        onclick={handleEnrich}
+        disabled={isLoading}>
+    </lightning-button>
+</template>

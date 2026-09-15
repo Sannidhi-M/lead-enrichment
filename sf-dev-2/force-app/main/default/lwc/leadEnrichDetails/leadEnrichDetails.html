@@ -1,0 +1,50 @@
+<template>
+    <lightning-card title = "Enriched Details">
+        <div class = "slds-grid slds-wrap slds-gutters">
+            <div class = "slds-col slds-size_1-of-2 slds-m-bottom_medium">
+                <strong>Company Name</strong>
+                <div>{companyName}</div>
+            </div>
+            <div class = "slds-col slds-size_1-of-2 slds-m-bottom_medium">
+                <strong>Industry</strong>
+                <div>{industry}</div>
+            </div>
+            <div class = "slds-col slds-size_1-of-2 slds-m-bottom_medium">
+                <strong>Employee Count</strong>
+                <div>{employeeCount}</div>
+            </div>
+            <div class = "slds-col slds-size_1-of-2 slds-m-bottom_medium">
+                <strong>Employee Range</strong>
+                <div>{employeeRange}</div>
+            </div>
+            <div class = "slds-col slds-size_1-of-2 slds-m-bottom_medium">
+                <strong>Country</strong>
+                <div>{country}</div>
+            </div>
+            <div class = "slds-col slds-size_1-of-2 slds-m-bottom_medium">
+                <strong>Domain</strong>
+                <div>{domain}</div>
+            </div>
+            <div class = "slds-col slds-size_1-of-2 slds-m-bottom_medium">
+                <strong>Confidence Score</strong>
+                <div>{confidenceScore}</div>
+            </div>
+            <div class = "slds-col slds-size_1-of-2 slds-m-bottom_medium">
+                <strong>Last Enriched</strong>
+                <div>{lastEnrichedDate}</div>
+            </div>
+            <div class = "slds-col slds-size_1-of-1 slds-m-bottom_medium">
+                <strong>Enrichment Notes</strong>
+                <div>{enrichmentNotes}</div>
+            </div>
+            <div class = "slds-col slds-size_1-of-1 slds-m-bottom_medium">
+                <strong>Company Logo</strong>
+               <img
+                    src={logo}
+                    alt="Company Logo"
+                    style="max-width: 120px; max-height: 120px;"
+                />
+            </div>
+        </div>
+    </lightning-card>
+</template> 
